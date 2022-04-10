@@ -43,7 +43,8 @@ main #home {
 
 main #home .image {
     background-image: url("../img/wallpaper.jpeg");
-    background-position: center;
+    background-position: center left;
+    background-attachment: fixed;
     background-size: cover;
     filter: brightness(50%);
     height: 300px;
@@ -65,6 +66,10 @@ main #home h2 {
 main #home p {
     font-family: Montserrat-SemiBold;
     line-height: 28px;
+}
+
+main #home .typed-cursor {
+    opacity: 0;
 }
 
 main #spotlight {
