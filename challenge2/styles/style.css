@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Montserrat-medium;
+    src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header p {
+    background-color: var(--title);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: Montserrat-medium;
+}
+
+header h3 {
+    font-family: Montserrat-SemiBold;
+    font-size: 24px;
+    text-align: center;
+    padding: 8px;
+}
+
+main #home {
+    position: relative;
+    background-size: cover;
+    color: white;
+    margin-bottom: 50px;
+}
+
+main #home .image {
+    background-image: url("../img/wallpaper.jpeg");
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
+    height: 300px;
+}
+
+main #home .text {
+    max-width: 460px;
+    position: absolute;
+    top: 30%;
+    padding: 20px;
+}
+
+main #home h2 {
+    font-family: Montserrat-Bold;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+main #home p {
+    font-family: Montserrat-SemiBold;
+    line-height: 28px;
+}
+
+main #spotlight {
+    text-align: center;
+    padding: 20px;
+}
+
+main #spotlight h2 {
+    font-family: Montserrat-SemiBold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+main #spotlight p {
+    font-family: Montserrat-medium;
+    margin-bottom: 60px; 
+}
+
+main .shoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .shoe {
+    background-color: var(--bgCard);
+    padding: 76px 62px;
+    margin-bottom: 30px;
+}
+
+
+footer {
+    background-color: var(--title);
+    font-family: Montserrat-medium;
+    text-align: center;
+    padding: 12px;
+    color: white;
+}
+
+@media (min-width: 580px) {
+    main #home .text {
+        margin-left: 40px;
+    }
+
+    main #spotlight h2,
+    main #home h2 {
+        font-size: 32px;
+    }
+    
+    main #spotlight p,
+    main #home p {
+        font-size: 18px;
+    }
+
+    main .shoe {
+        max-width: 300px;
+        margin: 30px 10px;
+    }
+}
