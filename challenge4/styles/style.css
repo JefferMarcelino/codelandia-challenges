@@ -1,0 +1,139 @@
+@font-face {
+    font-family: LatoBold;
+    src: url("../fonts/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MerriweatherRegular;
+    src: url("../fonts/Merriweather-Regular.ttf") format("truetype");
+}
+
+
+main {
+    display: flex;
+    margin: auto;
+    max-width: 1250px;
+}
+
+section.img {
+    max-width: 400px;
+    background-color: var(--white300);
+    display: none;
+    position: none;
+    opacity: 0;
+}
+
+p,
+label,
+input {
+    color: var(--dark);
+}
+
+section.login {
+    background-color: white;
+    height: 100vh;
+    padding: 35px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: auto;
+}
+
+section.login .top {
+    font-family: MerriweatherRegular;
+    margin-bottom: 30px;
+}
+
+section.login .top p {
+    margin-bottom: 7px;
+}
+
+section.login .top h2 {
+    font-size: 26px;
+}
+
+section.login form {
+    display: flex;
+    font-family: LatoRegular;
+    flex-direction: column;
+}
+
+section.login form label {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+section.login form input {
+    border: 1px solid var(--input);
+    outline: none;
+    border-radius: 5px;
+    padding: 17px 20px;
+}
+
+section.login .text {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.login .text .remember {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.login .text .remember p {
+    margin-left: 10px;
+}
+
+section.login button {
+    font-family: LatoBold;
+    padding: 15px;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+section.login button.enter {
+    background-color: var(--green);
+}
+
+section.login button.btLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+}
+
+section.login button img {
+    margin-right: 12px;
+}
+
+section.login .createAccout {
+    text-align: center;
+    font-family: MerriweatherRegular;
+}
+
+@media (min-width: 980px) {
+    section.img {
+        position: static;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+
+    section.login {
+        width: 40%;
+    }
+}
