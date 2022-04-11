@@ -38,7 +38,6 @@ section.login {
     background-color: white;
     height: 100vh;
     padding: 35px;
-    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
