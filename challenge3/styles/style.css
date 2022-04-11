@@ -1,0 +1,186 @@
+@font-face {
+    font-family: MerriweatherRegular;
+    src: url("../fonts/Merriweather-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MerriweatherBold;
+    src: url("../fonts/Merriweather-Bold.ttf") format("truetype");
+}
+
+section p {
+    color: var(--text);
+    font-family: LatoRegular;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+section.top {
+    padding: 20px;
+    background-color: var(--bgSite);
+    margin-bottom: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.top .right {
+    margin-top: 35px;
+    max-width: 390px;
+}
+
+section h1 {
+    font-size: 32px;
+    font-family: MerriweatherRegular;
+    color: var(--title);
+    margin-bottom: 18px;
+}
+
+section button {
+    background-color: var(--buttonColor);
+    padding: 15px 50px;
+    font-family: LatoRegular;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 32px;
+}
+
+section.top img {
+    margin: 90px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+section.cards {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.cards .card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+section.cards .color {
+    height: 300px;
+}
+
+section.cards .color.red {
+    background-color: #FF6363;
+}
+
+section.cards .color.skyblue {
+    background-color: #63ECFF;
+}
+
+section.cards .color.pink {
+    background-color: #F363FF;
+}
+
+section.cards .color.green {
+    background-color: #63FF73;
+}
+
+section.cards .color.yellow {
+    background-color: #FFDD63;;
+}
+
+section.cards .color.purple {
+    background-color: #6663FF;;
+}
+
+section.cards .text {
+    padding: 26px 33px;
+}
+
+section.cards .text h2 {
+    font-family: MerriweatherBold;
+}
+
+section.cards .text p {
+    margin-top: 26px;
+}
+
+
+section.contact {
+    background-color: var(--bgSite);
+    margin-top: 75px;
+    
+}
+
+section.contact .container {
+    padding: 85px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+}
+
+section.contact h1 {
+    margin-bottom: 36px;
+    font-size: 32px;
+}
+
+section.contact input {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    padding: 20px;
+}
+
+section.contact input,
+section.contact textarea {
+    font-family: LatoRegular;
+    font-size: 18px;
+}
+
+section.contact textarea {
+    resize: none;
+    height: 150px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (min-width: 810px) {
+    section.top {
+        padding: 0 80px;
+    }
+    
+    section h1 {
+        font-size: 36px;
+    }
+
+    section.top p {
+        font-size: 19px;
+    }
+
+    section.top img {
+        width: 40%;
+    }
+
+    section.cards {
+        padding: 0;
+    }
+
+    section.cards .card {
+        margin: 30px 50px;
+    }
+
+    section.contact {
+        margin-top: 150px;
+    }
+}
