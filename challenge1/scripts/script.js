@@ -22,7 +22,7 @@ fetch("https://blog-api-mz.herokuapp.com/api/v1/blog/posts/")
         top.appendChild(date)
 
         const image = document.createElement("img")
-        image.setAttribute("src", "../images/favorite.png")
+        image.setAttribute("src", "./images/favorite.png")
         top.appendChild(image)
 
         const title = document.createElement("h3")
