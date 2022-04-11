@@ -16,6 +16,7 @@
 
 main {
     display: flex;
+    align-items: center;
     margin: auto;
     max-width: 1250px;
 }
@@ -122,7 +123,7 @@ section.login .createAccout {
     font-family: MerriweatherRegular;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 880px) {
     section.img {
         position: static;
         opacity: 1;
