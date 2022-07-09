@@ -1,0 +1,146 @@
+@font-face {
+    font-family: PoppinsBold;
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: PoppinsBlack;
+    src: url("../fonts/Poppins-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: PoppinsRegular;
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+header .logo {
+    max-width: 200px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header ul li {
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    transform: translateY(-15%) scale(1.1);
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+main .text {
+    order: 1;
+    color: white;
+    max-width: 450px;
+}
+
+main .text > span {
+    text-transform: uppercase;
+    font-family: PoppinsBold;
+}
+
+main .text h2 {
+    text-transform: uppercase;
+    font-family: PoppinsBlack;
+    font-size: 4rem;
+}
+
+main .text p {
+    line-height: 1.75rem;
+    font-family: PoppinsRegular;
+}
+
+main .text .buttons {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+main .text a {
+    background: #658E76;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: white;
+    transform: skew(-20deg);
+    text-transform: uppercase;
+    font-family: PoppinsMedium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+main .text a span,
+main .text a img {
+    transform: skew(20deg);
+}
+
+main .text a.trailler {
+    background: transparent;
+    border: 1px solid #658E76;
+}
+
+main div.img {
+    margin: auto;
+    order: 2;
+}
+
+main div.img img {
+    max-width: 500px;
+    width: 100%;
+}
+
+@media (max-width: 1015px) {
+    main div.img {
+        margin: auto;
+        order: 1;
+    }
+
+    main .text h2 {
+        font-size: 3rem;
+    }
+}
