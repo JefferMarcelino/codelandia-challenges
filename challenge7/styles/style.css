@@ -1,0 +1,107 @@
+@font-face {
+    font-family: OpenSansBold;
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../images/background.png");
+    background-color: #1E1E20;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+    font-family: OpenSansBold;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+main > img {
+    width: 500px;
+}
+
+main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+main .left > img {
+    max-width: 300px;
+}
+
+main .chars {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+}
+
+main .char {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+main .char span {
+    font-family: OpenSansBold;
+    color: #FF4656;
+    margin-top: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media (max-width: 900px) {
+    header h2 {
+        display: none;
+        opacity: 0;
+    }
+
+    main > img {
+        display: none;
+        opacity: 0;
+    }
+
+    main .left > img {
+        display: none;
+        opacity: 0;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
