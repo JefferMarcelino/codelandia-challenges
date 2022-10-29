@@ -16,6 +16,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     align-items: center;
     font-family: 'Sen', sans-serif;
     font-weight: bold;
@@ -28,7 +29,7 @@ header .title {
 
 header > div {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 } 
 
 header .circle {
@@ -110,6 +111,7 @@ main h2 {
     font-weight: bold;
     letter-spacing: 0.2rem;
     max-width: 700px;
+    word-wrap: normal;
     font-size: 3rem;
 }
 
@@ -224,14 +226,14 @@ blockquote span {
 
     main .topImages img#img1 {
         position: relative;
-        width: 150px;
+        max-width: 150px;
         height: auto;
     }
 
     main .topImages img#img2 {
         position: relative;
         top: -50px;
-        width: 150px;
+        max-width: 150px;
         height: auto;
     }
 
@@ -241,17 +243,17 @@ blockquote span {
 
     main .bottomImages #img3 {
         display: none;
-        width: 150px;
+        max-width: 150px;
     }
 
     main .bottomImages #img4 {
         position: static;
-        width: 150px;
+        max-width: 150px;
     }
 
     main .bottomImages #img5 {
         position: relative;
-        width: 150px;
+        max-width: 150px;
         right: 0;
         top: -50px;
     }
