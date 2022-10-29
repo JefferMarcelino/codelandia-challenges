@@ -14,7 +14,8 @@ body {
     background-color: #1E1E20;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 header {
@@ -29,6 +30,12 @@ header {
     color: white;
 }
 
+header a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
 main {
     max-width: 1200px;
     margin: auto;
@@ -40,6 +47,19 @@ main {
 
 main > img {
     width: 500px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+main > img:hover {
+    transform: scale(1.02);
+}
+
+main > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
 }
 
 main .left {
@@ -64,6 +84,7 @@ main .chars {
 
 main .char {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -76,16 +97,30 @@ main .char span {
     margin-top: 0.5rem;
 }
 
-footer {
+#footer {
+    margin-top: 3rem;
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
     padding: 1rem;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
+}
+
+#footer img {
+    transition: .2s;
+    cursor: pointer;
+}
+
+#footer img:hover {
+    transform: translateY(-15%);
 }
 
 @media (max-width: 900px) {
+    body {
+        height: 100%;
+        overflow-y: scroll;
+    }
+
     header h2 {
         display: none;
         opacity: 0;
@@ -96,12 +131,20 @@ footer {
         opacity: 0;
     }
 
+    main > div {
+        margin: 0 auto;
+    }
+
+    main .left .chars {
+        flex-direction: column;
+    }
+
     main .left > img {
         display: none;
         opacity: 0;
     }
 
-    footer {
+    #footer {
         justify-content: center;
     }
 }

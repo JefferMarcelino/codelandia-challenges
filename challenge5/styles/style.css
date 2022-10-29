@@ -135,6 +135,10 @@ main div.img img {
 }
 
 @media (max-width: 1015px) {
+    header .logo {
+        max-width: 150px;
+    }
+
     main div.img {
         margin: auto;
         order: 1;
