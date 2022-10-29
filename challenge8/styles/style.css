@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@400;700&display=swap');
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F9F9F9;
+    padding: 20px 20px 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    color: #2F2F2F;
+}
+
+header .title {
+    font-size: 1.5rem;
+}
+
+header > div {
+    display: flex;
+    gap: 2rem;
+} 
+
+header .circle {
+    padding: 7px;
+    border: 2px solid #EAEAEA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .login {
+    width: 100%;
+    border: 2px solid #EAEAEA;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 2rem;
+    font-weight: 500;
+}
+
+header .login a {
+    color: #2F2F2F;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .login img {
+    display: none;
+}
+
+main {
+    text-align: center;
+    position: relative;
+    margin: 4rem 0;
+}
+
+main > div {
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    width: 100%;
+}
+
+main img#img1 {
+    max-width: 250px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main img#img2 {
+    max-width: 190px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+main #text {
+    margin: 0 auto;
+}
+
+main h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+main h2 {
+    margin: 2rem auto;
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    max-width: 700px;
+    font-size: 3rem;
+}
+
+main .topContent .topImages {
+    margin: 1rem 0;
+}
+
+main .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+main .buttons button {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    padding: .8rem 2rem;
+    border-radius: .8rem;
+    border: none;
+    cursor: pointer;
+}
+
+main .buttons button.purple {
+    background-color: #6610F2;
+    color: white;
+    font-weight: 600;
+}
+
+main .buttons button.normal {
+    background-color: transparent;
+    border: 2px solid #EAEAEA;
+} 
+
+main .bottomImages {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+main .bottomImages img {
+    width: 100%;
+    max-width: 190px;
+}
+
+main .bottomImages #img3 {
+    position: absolute;
+    top: -60px;
+    left: 0;
+}
+
+main .bottomImages #img5 {
+    position: absolute;
+    top: -120px;
+    right: 0;
+}
+
+footer {
+    background-color: white;
+    padding: 3rem 4rem;
+    font-family: 'Inter', sans-serif;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+blockquote {
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+blockquote span {
+    display: block;
+    text-transform: uppercase;
+    border-left: 5px solid #6610F2;
+    font-size: 1.2rem;
+    padding: 0.1rem 0.8rem;
+}
+
+@media (max-width: 1000px) {
+    header .login {
+        padding: 7px 12px;
+        border: 2px solid #EAEAEA;
+        border-radius: 50%;
+    }
+
+    header .login a {
+        display: none;
+    }
+    
+    header .login img {
+        display: block;
+    }
+
+    main .topContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .topContent .topImages {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main .topImages img#img1 {
+        position: relative;
+        width: 150px;
+        height: auto;
+    }
+
+    main .topImages img#img2 {
+        position: relative;
+        top: -50px;
+        width: 150px;
+        height: auto;
+    }
+
+    main .bottomImages {
+        justify-content: space-around;
+    }
+
+    main .bottomImages #img3 {
+        display: none;
+        width: 150px;
+    }
+
+    main .bottomImages #img4 {
+        position: static;
+        width: 150px;
+    }
+
+    main .bottomImages #img5 {
+        position: relative;
+        width: 150px;
+        right: 0;
+        top: -50px;
+    }
+}

@@ -10,7 +10,8 @@ In this repository you will find the my resolution of several challenges propose
 | [Login](./challenge4)                            | Simple login screen                                        | [Login](https://jeffermarcelino.github.io/codelandia-challenges/challenge4/)|
 | [HAYAO MIYAZAKI](./challenge5)                   | Simple Hayao Miyazaki movie page                                          | [HAYAO MIYAZAKI](https://jeffermarcelino.github.io/codelandia-challenges/challenge5/)|
 | [LOKI](./challenge6)                   | Simple Loke movie page                                          | [LOKI](https://jeffermarcelino.github.io/codelandia-challenges/challenge6/)|
-| [VALORANT](./challenge7)                   | A simple Valorant game web page                                          | [VALORANT](https://jeffermarcelino.github.io/codelandia-challenges/challenge6/)|
+| [VALORANT](./challenge7)                   | A simple Valorant game web page                                          | [VALORANT](https://jeffermarcelino.github.io/codelandia-challenges/challenge7/)|
+| [CodeMoji](./challenge8)                   | A simple Library's Landing Page                                          | [CodeMoji](https://jeffermarcelino.github.io/codelandia-challenges/challenge8/)|
 
 
 ## 📝 License
